@@ -1,0 +1,287 @@
+    /* Estilização Global */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Corpo do documento */
+    body {
+        background-color: #b19d87; /* Cor neutra para fundo (suave e limpa) */
+        color: #222222; /* Texto principal em um tom escuro, para bom contraste */
+        line-height: 1.6;
+    }
+
+    /* Estilo para o conteúdo principal */
+    main {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    /* Seção de introdução */
+    #introducao {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    #introducao .texto {
+        flex: 1;
+        color: #333333; /* Texto escuro, fácil de ler */
+    }
+
+    #introducao img {
+        height: 280px;
+        width: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+        /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    }
+
+    /* Seção do Carrossel */
+    #carrossel {
+        width: 100%;
+        overflow: hidden;
+        margin: 20px 0;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .carrossel-imagens {
+        gap: 10px;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #carrossel img {
+        height: 280px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Depoimentos */
+    #depoimentos {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    #depoimentos video {
+        width: 300px;
+        height: 200px;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        object-fit: cover;
+    }
+
+    #depoimentos .depoimentos-texto p {
+        margin: 5px 0;
+    }
+
+    #depoimentos .depoimentos-texto p strong {
+        font-weight: bold;
+        color: #E63946; /* Vermelho vibrante para destaque */
+    }
+
+    #depoimentos .depoimentos-texto i  {
+        opacity: 0.5;
+    }
+
+    /* Descrição da Escola */
+    #descricao-cadastro {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .descricao, .cadastro {
+        flex: 1;
+    }
+
+    .cadastro input, .cadastro select {
+        width: 100%;
+        margin: 5px 0 15px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cadastro button {
+        width: 100%;
+        padding: 10px;
+        background-color: #1D3557;  /* Azul escuro, para complementar o tema */
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cadastro button:hover {
+        background-color: #F1FAEE;  /* Branco suave para hover */
+    }
+
+    /* Estilo para a seção de projetos */
+    #projetos {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #projetos h2 {
+        margin-bottom: 20px;
+        color: #E63946;  /* Vermelho escuro para títulos de projetos */
+    }
+
+    #projetos ul {
+        list-style: none;
+    }
+
+    #projetos li {
+        margin-bottom: 10px;
+    }
+
+    #projetos a {
+        text-decoration: none;
+        color: #457B9D; /* Azul mais suave para links */
+        font-weight: bold;
+    }
+
+    #projetos a:hover {
+        color: #F1FAEE;  /* Branco suave para hover */
+        text-decoration: underline;
+    }
+
+    /* Estilo das Seções de Introdução e outros elementos */
+    /* Estilo para cada seção */
+    section {
+        margin-bottom: 40px;
+        padding: 50px;
+        background-color: #E9ECEF;  /* Fundo mais claro e suave */
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilos para os itens de projetos */
+    #projetos ul {
+        display: flex;          /* Exibe os itens de forma horizontal */
+        gap: 20px;              /* Espaçamento entre os itens */
+        list-style: none;       /* Remove os marcadores de lista */
+        flex-wrap: wrap;        /* Permite que os itens que não cabem em uma linha se movam para a próxima linha */
+        padding: 0;
+    }
+    
+    #projetos li {
+        background-color: #f8f9fa; 
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 200px;
+    }
+    
+    #projetos a {
+        text-decoration: none;
+        color: #007bff;  /* Cor do link */
+        font-weight: bold;
+    }
+    
+    #projetos a:hover {
+        color: #0056b3;  /* Cor de hover do link */
+        text-decoration: underline;
+    }
+    
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .whatsapp-icon:hover {
+        background-color: #128C7E; /* Cor de hover */
+    }
+    @media (max-width: 768px) {
+        main {
+            width: 100%;
+        }
+        section {
+            padding: 25px;
+        }
+        /* Ajusta a introdução */
+        #introducao {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #introducao img {
+            height: 280px;
+            width: 230px;
+            object-fit: cover;
+        }
+    
+        /* Carrossel ajustado */
+        #carrossel img {
+            width: 150px;
+            height: 150px;
+        }
+    
+        /* Depoimentos ajustados */
+        #depoimentos {
+            flex-direction: column;
+        }
+
+        #depoimentos video{
+            display: none;
+        }
+    
+        /* Ajustes para a descrição e cadastro */
+        #descricao-cadastro {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        /* Ajuste nos projetos */
+        #projetos ul {
+            flex-direction: column;
+            gap: 15px;
+        }
+        #projetos li{
+        width: initial; 
+    }
+    
+    @media (max-width: 480px) {
+        /* Para telas menores como smartphones em modo retrato */
+        .cadastro button {
+            padding: 12px;
+        }
+    
+        #whatsapp-icon {
+            padding: 12px;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+}
